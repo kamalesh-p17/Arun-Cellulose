@@ -1,0 +1,30 @@
+/* ===== Global Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ===== Background with Opacity Overlay ===== */
+body {
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+
+  background:
+    linear-gradient(
+      rgba(0, 40, 20, 0.75),   /* Top overlay */
+      rgba(0, 40, 20, 0.75)    /* Bottom overlay */
+    ),
+    url("assets/bg.png");
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  color: #F5F5F5;
+}

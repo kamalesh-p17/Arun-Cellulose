@@ -1,0 +1,73 @@
+/* ===== Section ===== */
+.process-section {
+  padding: 120px 80px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+/* Layout */
+.process-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  width: 100%;
+}
+
+/* ===== Video ===== */
+.process-video {
+  flex: 1;
+}
+
+.process-video video {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+}
+
+/* ===== Content ===== */
+.process-content {
+  flex: 1;
+  background: rgba(0, 40, 20, 0.6);
+  padding: 40px;
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+  animation: fadeInRight 1s ease forwards;
+}
+
+.process-content h2 {
+  font-size: 40px;
+  margin-bottom: 25px;
+  color: #E6C200; /* Gold heading */
+}
+
+.process-content p {
+  font-size: 20px;
+  margin-bottom: 15px;
+  line-height: 1.5;
+  color: #F5F5DC;
+}
+
+/* ===== Animation ===== */
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 900px) {
+  .process-container {
+    flex-direction: column;
+  }
+
+  .process-section {
+    padding: 80px 30px;
+  }
+}
